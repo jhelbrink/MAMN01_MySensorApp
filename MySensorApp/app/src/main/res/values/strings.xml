@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MySensorApp</string>
+    <string name="compass">Open Compass</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.john.mysensorapp.Main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="68dp"
+        android:onClick="sendAccelerometer"
+        android:text="Accele"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:onClick="sendCompass"
+        android:text="Compass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Choose sensor(s) to test:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+</android.support.constraint.ConstraintLayout>
