@@ -55,18 +55,18 @@ public class Accelerometer extends AppCompatActivity implements SensorEventListe
 
 
         //changes size of the xyz values when moving the phone.
-        if(sensorEvent.values[0] > 0){
+        if(lpAcc[0] > 0){
             xText.setTextSize(38);
 
         }else{
             xText.setTextSize(28);
         }
-        if(sensorEvent.values[1] > 0){
+        if(lpAcc[1] > 0){
             yText.setTextSize(38);
         }else{
             yText.setTextSize(28);
         }
-        if(sensorEvent.values[2] > 0){
+        if(lpAcc[2] > 0){
             zText.setTextSize(38);
         }else{
             zText.setTextSize(28);
