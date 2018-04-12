@@ -19,7 +19,7 @@ public class Accelerometer extends AppCompatActivity implements SensorEventListe
     private Sensor mySensor;
     private SensorManager SM;
     private float[] lpAcc = new float[3];
-    static final float ALPHA = 0.97f;
+    static final float ALPHA = 0.25f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
